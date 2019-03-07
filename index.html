@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Counter - Theme Changer</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./themes.css" />
-  </head>
-  <body>
-    <header>
-      <p>Choose a theme:</p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Counter - Theme Changer</title>
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./themes.css" />
+	</head>
+	<body>
+		<header>
+			<p>Choose a theme:</p>
 
-      <button>Facebook</button> <button>DevMountain</button>
-      <button>Twitter</button> <button>Default</button>
-    </header>
-    <main>
-      <h1>0</h1>
-      <h2>Clicks</h2>
-      <section>
-        <button>-</button> <button>Reset</button> <button>+</button>
-      </section>
-    </main>
-  </body>
+			<button onclick="selectTheme('facebook')">Facebook</button>
+			<button onclick="selectTheme('devmountain')">DevMountain</button>
+			<button onclick="selectTheme('twitter')">Twitter</button>
+			<button onclick="selectTheme('default')">Default</button>
+		</header>
+		<main>
+			<h1 id="counter">0</h1>
+			<h2>Clicks</h2>
+			<section>
+				<button onclick="decrease()">-</button>
+				<button onclick="reset()">Reset</button>
+				<button onclick="increase()">+</button>
+			</section>
+		</main>
+		<script src="./index.js"></script>
+	</body>
 </html>
